@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="何永彪,wsxc_0617@sina.cn"><title>【node】Node.js 安装配置(转) · 何永彪的博客</title><meta name="description" content="本文摘自：https://www.runoob.com/nodejs/nodejs-install-setup.html
+本章节我们将向大家介绍在 Windows 和 Linux 上安装 Node.js 的方法。
+本安装教程以 Node.js v4.4.3 LTS(长期支持版本)版本为例。
+Node"><meta name="keywords" content="Hexo,java,wsxc_0617,何永彪"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"></head><body><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">何永彪的博客</a></h3><div class="description"><p>Nothing lasts forever.</p></div></div></div><ul class="social-links"><li><a href="http://weibo.com/aerios"><i class="fa fa-weibo"></i></a></li><li><a href="http://github.com/wsxc0617"><i class="fa fa-github"></i></a></li></ul><div class="footer"><span>&copy2018 何永彪  </span><i class="fa fa-heart"></i><div class="by_farbox"></div><a href="https://hexo.io/zh-cn/" target="_blank">由 Hexo 强力驱动</a><span> | 博客全站共  </span><span class="post-count">3.3k</span><span>字</span></div></div><div class="main"><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">首页</a></li><li><a href="/about">关于</a></li><li><a href="/archives">归档</a></li><li><a href="/links">友链</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li></div><div class="avatar"><img src="/images/favicon.png"></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>【node】Node.js 安装配置(转)</a></h3></div><div class="post-content"><p>本文摘自：<a href="https://www.runoob.com/nodejs/nodejs-install-setup.html" target="_blank" rel="noopener">https://www.runoob.com/nodejs/nodejs-install-setup.html</a></p>
+<p>本章节我们将向大家介绍在 Windows 和 Linux 上安装 Node.js 的方法。</p>
+<p>本安装教程以 Node.js v4.4.3 LTS(长期支持版本)版本为例。</p>
+<p>Node.js 安装包及源码下载地址为：<a href="https://nodejs.org/en/download/。" target="_blank" rel="noopener">https://nodejs.org/en/download/。</a></p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2014/03/download-page.jpg" alt="nodejs_download"></p>
+<p>你可以根据不同平台系统选择你需要的 Node.js 安装包。</p>
+<p>Node.js 历史版本下载地址：<a href="https://nodejs.org/dist/" target="_blank" rel="noopener">https://nodejs.org/dist/</a></p>
+<p><strong>注意：</strong>Linux 上安装 Node.js 需要安装 Python 2.6 或 2.7 ，不建议安装 Python 3.0 以上版本。</p>
+<hr>
+<h2 id="Windows-上安装-Node-js"><a href="#Windows-上安装-Node-js" class="headerlink" title="Windows 上安装 Node.js"></a>Windows 上安装 Node.js</h2><p>你可以采用以下两种方式来安装。</p>
+<h3 id="1、Windows-安装包-msi"><a href="#1、Windows-安装包-msi" class="headerlink" title="1、Windows 安装包(.msi)"></a>1、Windows 安装包(.msi)</h3><p>32 位安装包下载地址 : <a href="https://nodejs.org/dist/v4.4.3/node-v4.4.3-x86.msi" target="_blank" rel="noopener">https://nodejs.org/dist/v4.4.3/node-v4.4.3-x86.msi</a></p>
+<p>64 位安装包下载地址 : <a href="https://nodejs.org/dist/v4.4.3/node-v4.4.3-x64.msi" target="_blank" rel="noopener">https://nodejs.org/dist/v4.4.3/node-v4.4.3-x64.msi</a></p>
+<p>本文实例以 v0.10.26 版本为例，其他版本类似， 安装步骤：</p>
+<p>步骤 1 : 双击下载后的安装包 <strong>v0.10.26</strong>，如下所示：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2014/03/install-node-msi-version-on-windows-step1.png" alt="install-node-msi-version-on-windows-step1"></p>
+<p>步骤 2 : 点击以上的Run(运行)，将出现如下界面：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2014/03/install-node-msi-version-on-windows-step2.png" alt="install-node-msi-version-on-windows-step2"></p>
+<p>步骤 3 : 勾选接受协议选项，点击 next（下一步） 按钮 :</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2014/03/install-node-msi-version-on-windows-step3.png" alt="install-node-msi-version-on-windows-step3"></p>
+<p>步骤 4 : Node.js默认安装目录为 “C:\Program Files\nodejs\” , 你可以修改目录，并点击 next（下一步）： </p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2014/03/install-node-msi-version-on-windows-step4.png" alt="install-node-msi-version-on-windows-step4"></p>
+<p>步骤 5 : 点击树形图标来选择你需要的安装模式 , 然后点击下一步 next（下一步）</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2014/03/install-node-msi-version-on-windows-step5.png" alt="install-node-msi-version-on-windows-step5"></p>
+<p>步骤 6 :点击 Install（安装） 开始安装Node.js。你也可以点击 Back（返回）来修改先前的配置。 然后并点击 next（下一步）：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2014/03/install-node-msi-version-on-windows-step6.png" alt="install-node-msi-version-on-windows-step6"></p>
+<p>安装过程：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2014/03/install-node-msi-version-on-windows-step7.png" alt="install-node-msi-version-on-windows-step7"></p>
+<p>点击 Finish（完成）按钮退出安装向导。</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2014/03/install-node-msi-version-on-windows-step8.png" alt="install-node-msi-version-on-windows-step8"></p>
+<p>检测PATH环境变量是否配置了Node.js，点击开始=》运行=》输入”cmd” =&gt; 输入命令”path”，输出如下结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">PATH=C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Windows\system32;</span><br><span class="line">C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;</span><br><span class="line">c:\python32\python;C:\MinGW\bin;C:\Program Files\GTK2-Runtime\lib;</span><br><span class="line">C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Program Files\nodejs\;</span><br><span class="line">C:\Users\rg\AppData\Roaming\npm</span><br></pre></td></tr></table></figure>
+<p>我们可以看到环境变量中已经包含了C:\Program Files\nodejs\</p>
+<p>检查Node.js版本</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2014/03/node-version-test.png" alt="node-version-test"></p>
+<h3 id="2、Windows-二进制文件-exe-安装"><a href="#2、Windows-二进制文件-exe-安装" class="headerlink" title="2、Windows 二进制文件 (.exe)安装"></a>2、Windows 二进制文件 (.exe)安装</h3><p>32 位安装包下载地址 : <a href="http://nodejs.org/dist/v0.10.26/node.exe" target="_blank" rel="noopener">http://nodejs.org/dist/v0.10.26/node.exe</a></p>
+<p>64 位安装包下载地址 : <a href="http://nodejs.org/dist/v0.10.26/x64/node.exe" target="_blank" rel="noopener">http://nodejs.org/dist/v0.10.26/x64/node.exe</a></p>
+<p><strong>安装步骤</strong></p>
+<p>步骤 1 : 双击下载的安装包 Node.exe ，将出现如下界面 :</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2014/03/install-node-exe-on-windows-step1.png" alt="install-node-exe-on-windows-step1"></p>
+<p>点击 Run（运行）按钮将出现命令行窗口：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2014/03/install-node-exe-on-windows-step21.png" alt="install-node-exe-on-windows-step21"></p>
+<h3 id="版本测试"><a href="#版本测试" class="headerlink" title="版本测试"></a>版本测试</h3><p>进入 node.exe 所在的目录，如下所示：</p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2014/03/node-version.png" alt="node-version"></p>
+<p>如果你获得以上输出结果，说明你已经成功安装了Node.js。</p>
+<hr>
+<h2 id="Linux-上安装-Node-js"><a href="#Linux-上安装-Node-js" class="headerlink" title="Linux 上安装 Node.js"></a>Linux 上安装 Node.js</h2><h3 id="直接使用已编译好的包"><a href="#直接使用已编译好的包" class="headerlink" title="直接使用已编译好的包"></a>直接使用已编译好的包</h3><p>Node 官网已经把 linux 下载版本更改为已编译好的版本了，我们可以直接下载解压后使用：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># wget https://nodejs.org/dist/v10.9.0/node-v10.9.0-linux-x64.tar.xz    // 下载</span><br><span class="line"># tar xf  node-v10.9.0-linux-x64.tar.xz       // 解压</span><br><span class="line"># cd node-v10.9.0-linux-x64/                  // 进入解压目录</span><br><span class="line"># ./bin/node -v                               // 执行node命令 查看版本</span><br><span class="line">v10.9.0</span><br></pre></td></tr></table></figure>
+<p>解压文件的 bin 目录底下包含了 node、npm 等命令，我们可以使用 ln 命令来设置软连接：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ln -s /usr/software/nodejs/bin/npm   /usr/local/bin/ </span><br><span class="line">ln -s /usr/software/nodejs/bin/node   /usr/local/bin/</span><br></pre></td></tr></table></figure>
+<h3 id="Ubuntu-源码安装-Node-js"><a href="#Ubuntu-源码安装-Node-js" class="headerlink" title="Ubuntu 源码安装 Node.js"></a>Ubuntu 源码安装 Node.js</h3><p>以下部分我们将介绍在 Ubuntu Linux 下使用源码安装 Node.js 。 其他的 Linux 系统，如 Centos 等类似如下安装步骤。</p>
+<p>在 Github 上获取 Node.js 源码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo git clone https://github.com/nodejs/node.git</span><br><span class="line">Cloning into &apos;node&apos;...</span><br></pre></td></tr></table></figure>
+<p>修改目录权限：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo chmod -R 755 node</span><br></pre></td></tr></table></figure>
+<p>使用 <strong>./configure</strong> 创建编译文件，并按照：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ cd node</span><br><span class="line">$ sudo ./configure</span><br><span class="line">$ sudo make</span><br><span class="line">$ sudo make install</span><br></pre></td></tr></table></figure>
+<p>查看 node 版本：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ node --version</span><br><span class="line">v0.10.25</span><br></pre></td></tr></table></figure>
+<h3 id="Ubuntu-apt-get命令安装"><a href="#Ubuntu-apt-get命令安装" class="headerlink" title="Ubuntu apt-get命令安装"></a>Ubuntu apt-get命令安装</h3><p>命令格式如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install nodejs</span><br><span class="line">sudo apt-get install npm</span><br></pre></td></tr></table></figure>
+<h3 id="CentOS-下源码安装-Node-js"><a href="#CentOS-下源码安装-Node-js" class="headerlink" title="CentOS 下源码安装 Node.js"></a>CentOS 下源码安装 Node.js</h3><p>1、下载源码，你需要在<a href="https://nodejs.org/en/download/下载最新的Nodejs版本，本文以v0.10.24为例" target="_blank" rel="noopener">https://nodejs.org/en/download/下载最新的Nodejs版本，本文以v0.10.24为例</a>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/src/</span><br><span class="line">wget http://nodejs.org/dist/v0.10.24/node-v0.10.24.tar.gz</span><br></pre></td></tr></table></figure>
+<p>2、解压源码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar zxvf node-v0.10.24.tar.gz</span><br></pre></td></tr></table></figure>
+<p>3、 编译安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd node-v0.10.24</span><br><span class="line">./configure --prefix=/usr/local/node/0.10.24</span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
+<p>4、 配置NODE_HOME，进入profile编辑环境变量</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/profile</span><br></pre></td></tr></table></figure>
+<p>设置 nodejs 环境变量，在 <strong><em>export PATH USER LOGNAME MAIL HOSTNAME HISTSIZE HISTCONTROL</em></strong> 一行的上面添加如下内容:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#set for nodejs</span><br><span class="line">export NODE_HOME=/usr/local/node/0.10.24</span><br><span class="line">export PATH=$NODE_HOME/bin:$PATH</span><br></pre></td></tr></table></figure>
+<p>:wq保存并退出，编译/etc/profile 使配置生效</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
+<p>验证是否安装配置成功</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
+<p>输出 v0.10.24 表示配置成功</p>
+<p>npm模块安装路径</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/node/0.10.24/lib/node_modules/</span><br></pre></td></tr></table></figure>
+<p><strong>注：</strong>Nodejs 官网提供了编译好的 Linux 二进制包，你也可以下载下来直接应用。</p>
+<hr>
+<h2 id="Mac-OS-上安装"><a href="#Mac-OS-上安装" class="headerlink" title="Mac OS 上安装"></a>Mac OS 上安装</h2><p>你可以通过以下两种方式在 Mac OS 上来安装 node：</p>
+<ul>
+<li></li>
+<li><p>1、在</p>
+<p>官方下载网站</p>
+<p>下载 pkg 安装包，直接点击安装即可。</p>
+</li>
+</ul>
+<ul>
+<li><p>2、使用 brew 命令来安装：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install node</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<h2 id="在-Cloud-Studio-中运行-node-js-程序"><a href="#在-Cloud-Studio-中运行-node-js-程序" class="headerlink" title="在 Cloud Studio 中运行 node.js 程序"></a>在 Cloud Studio 中运行 node.js 程序</h2><p><strong>Cloud Studio</strong> 已经为我提供了内置的 Node.js 开发环境，我们不仅可以通过切换运行环境来编写 Node.js 代码，也可以通过 <strong>访问链接</strong> 功能来实时查看代码的运行效果，下面我通过一个例子来展示：</p>
+<ul>
+<li>step1：访问腾讯云开发者平台(<a href="https://studio.dev.tencent.com/)，注册/登录账户。" target="_blank" rel="noopener">https://studio.dev.tencent.com/)，注册/登录账户。</a></li>
+<li>step2：在右侧的运行环境菜单选择：<code>&quot;Node.js&quot;</code> 运行环境</li>
+<li>step3：在左侧代码目录中新建Node.js代码目录编写你的 Node.js 代码</li>
+<li>step4：进入 Node.js 代码目录运行 <code>node hello.js</code> 我们在代码中引入了 <strong>http</strong> 模块，并且通过<code>http.createServer()</code>方法创建了一个 http 服务器，通过<code>listen()</code> 方法绑定了 8888 端口</li>
+<li>step5：点击最右侧的【访问链接】选项卡，在访问链接面板中填写端口号为：8888，点击创建链接，即可点击生成的链接访问我们的 Node.js 项目</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">/*代码示例*/</span><br><span class="line"></span><br><span class="line">var http = require(&apos;http&apos;);</span><br><span class="line"></span><br><span class="line">http.createServer(function (request, response) &#123;</span><br><span class="line"></span><br><span class="line">    // 发送 HTTP 头部 </span><br><span class="line">    // HTTP 状态值: 200 : OK</span><br><span class="line">    // 内容类型: text/plain</span><br><span class="line">    response.writeHead(200, &#123;&apos;Content-Type&apos;: &apos;text/plain&apos;&#125;);</span><br><span class="line"></span><br><span class="line">    // 发送响应数据 &quot;Hello World&quot;</span><br><span class="line">    response.end(&quot;Hello, Universe! I&apos;m running on Cloud Studio!\n&quot;);</span><br><span class="line">&#125;).listen(8888);</span><br><span class="line"></span><br><span class="line">// 终端打印如下信息</span><br><span class="line">console.log(&apos;Server running at http://127.0.0.1:8888/&apos;);</span><br></pre></td></tr></table></figure>
+<p><strong>Tips:</strong> 从终端中输入命令可以看出 <strong>Cloud Studio</strong> 为我们集成了 <strong>Ubuntu16.04.1 + node8.10.0</strong> 的开发环境：</p>
+<p><img src="https://static.runoob.com/images/ad/85787280.jpg" alt="img"></p>
+<p><img src="https://static.runoob.com/images/ad/53086374.jpg" alt="img"></p>
+<p><img src="https://static.runoob.com/images/ad/23078893.jpg" alt="img"></p>
+<p>有任何疑问，可以查阅<a href="https://dev.tencent.com/help/doc/cloud-studio" target="_blank" rel="noopener">帮助文档</a></p>
+</div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2019-05-11</span><i class="fa fa-tag"></i></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" href="http://twitter.com/home?status=,https://wsxc0617.github.io/2019/05/11/nodejs-install-setup/,何永彪的博客,【node】Node.js 安装配置(转),;"></a></div></div><div class="pagination"><ul class="clearfix"><li class="next pagbuttons"><a class="btn" role="navigation" href="/2018/12/05/afternoon-meeting-share-book/" title="【午会】《近期想跟大家分享的一本书》">Próximo post</a></li></ul></div><a id="comments"></a><div id="vcomments" style="margin:0 30px;"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//cdn.jsdelivr.net/gh/xcss/valine@v1.1.7/dist/Valine.min.js?v=undefined"></script><script>var valine = new Valine({
+  el:'#vcomments',
+  notify:false || false, 
+  verify:false|| false, 
+  app_id:'MkYR5EsmrrE3ruD8GIYhs8dP-gzGzoHsz',
+  app_key:'8jCQKyobyCrRdiGCxuwiH037',
+  placeholder:'ヾﾉ≧∀≦)o这里可以写下你的评论...',
+  path: window.location.pathname,
+  avatar:'retro'
+})</script></div></div></div></div><script src="/js/jquery.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script></body></html>
